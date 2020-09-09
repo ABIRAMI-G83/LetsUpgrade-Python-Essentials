@@ -16,10 +16,12 @@ else:
     print ("it's gone")
 
 # Question 2
-nums = range(1, 2500) 
-for i in range(2, 8): 
-     nums = filter(lambda x: x == i or x % i, nums)
-print nums
+def prime():
+    nums = range(1, 2500) 
+    for i in range(2, 8): 
+        nums = filter(lambda x: x == i or x % i, nums)
+    print nums
+prime()
 
 # Question 3
 out = map(lambda x:x.title(), ['hey this is sai', 'I am in mumbai']) 
